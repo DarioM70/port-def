@@ -19,6 +19,7 @@ import java from "../public/java.svg";
 import Image from "next/image";
 import web1 from "../public/plqs1.png";
 import web2 from "../public/plqs2.png";
+import {Helmet} from "react-helmet"
 import web3 from "../public/plqs4.png";
 import web4 from "../public/plqs3.png";
 import web5 from "../public/dm.png";
@@ -246,10 +247,15 @@ export default function Home() {
                 </section>
                 
             </main>
-            <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
-                <script async>
+
+            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+                <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+
+                <script>
                     AOS.init();
                 </script>
+
+
             
         </div>
         

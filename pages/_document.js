@@ -12,10 +12,7 @@ export default function Document() {
         <body className="font-poppins">
         <Main />
         <NextScript />
-        <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
-        <script>
-            AOS.init();
-        </script>
+
         </body>
         </Html>
 );
