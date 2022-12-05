@@ -174,7 +174,7 @@ export default function Home() {
                 </section>
 
                 <section className="basis-1/3 flex-1 altu " >
-                <iframe data-aos="zoom-in" className="rounded-2xl w-full ms:h-full ease-in duration-75"  src="https://www.youtube.com/embed/C1WTqvU9pIY" title="Portafolio Dario Marquínez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe data-aos="zoom-in" className="rounded-2xl w-full ms:h-full ease-in duration-75"  src="https://www.youtube.com/embed/b9uTct_q6oI" title="Portafolio Dario Marquínez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </section>
 
