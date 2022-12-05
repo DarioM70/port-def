@@ -57,7 +57,7 @@ export default function Home() {
                                     id="resume"
                                     target="_blank"
                                     className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                                    href="https://www.youtube.com/watch?v=C1WTqvU9pIY"
+                                    href="https://www.youtube.com/watch?v=C1WTqvU9pIY" rel="noreferrer"
                                 >
                                     Resume
                                 </a>
@@ -92,9 +92,9 @@ export default function Home() {
 
                     
                         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 ">
-                            <a target="_blank" href="https://www.instagram.com/dario_m70/" className={styles.ig}><FaInstagram/> </a> 
-                            <a target="_blank" href="https://www.linkedin.com/in/darío-marquínez-803609222/" className={styles.linkedin}><FaLinkedin /></a>
-                            <a target="_blank" href="https://github.com/DarioM70" className={styles.github}><AiFillGithub/></a> 
+                            <a target="_blank" href="https://www.instagram.com/dario_m70/" className={styles.ig} rel="noreferrer"><FaInstagram/> </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/darío-marquínez-803609222/" className={styles.linkedin} rel="noreferrer"><FaLinkedin /></a>
+                            <a target="_blank" href="https://github.com/DarioM70" className={styles.github} rel="noreferrer"><AiFillGithub/></a>
                         </div>
                         
                     </div>
@@ -124,7 +124,7 @@ export default function Home() {
                             </h3>
                             <p className="py-2">
                                 Me encanta desarrollar la parte del servidor y me gusta la gestion de bases de datos y
-                                el desarollo de api's rest.
+                                el desarollo de apis rest.
                             </p>
                             <h4 className="py-4 text-teal-600">Tecnologías usadas</h4>
                             <p className="text-gray-800 py-1 dark:text-white ">Python</p>
@@ -187,7 +187,8 @@ export default function Home() {
                        
                     </div>
 
-                    <a target="_blank" href="https://plqssolutions.up.railway.app/"><h2 className="dark:decoration-white dark:text-white text-2xl decoration-solid decoration-black underline"><b>Pa' Las Que Sea Solutions | proyecto empresarial de servicios integrales.</b> </h2></a> 
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    <a target="_blank" href="https://plqssolutions.up.railway.app/" rel="noreferrer"><h2 className="dark:decoration-white dark:text-white text-2xl decoration-solid decoration-black underline"><b>Pa' Las Que Sea Solutions | proyecto empresarial de servicios integrales.</b> </h2></a>
                     
                     <div className="flex flex-col gap-10 py-8 lg:flex-row lg:flex-wrap">
                         
@@ -245,8 +246,10 @@ export default function Home() {
                 </section>
                 
             </main>
-
-
+            <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
+                <script async>
+                    AOS.init();
+                </script>
             
         </div>
         
