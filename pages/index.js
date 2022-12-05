@@ -245,10 +245,8 @@ export default function Home() {
                 </section>
                 
             </main>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                <script>
-                    AOS.init();
-                </script>
+
+
             
         </div>
         
