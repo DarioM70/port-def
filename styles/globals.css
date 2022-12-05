@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,13 +18,38 @@ a {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.card{
+  position: relative;
+}
+
+.card .face{
+
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front{
+  transform: perspective(600px) rotateY(0deg);
+  
+}
+
+.card .back{
+ 
+  transform: perspective(600px) rotateY(180deg);
+  padding: 15px;
+  background: gray;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.altu{
+  height: 833px;
 }
