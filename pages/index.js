@@ -42,7 +42,7 @@ export default function Home() {
                 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
             </Head>
-            <main className=" bg-white px-10 dark:bg-gray-900 sm:px-10 md:px-20 lg:px-40">
+            <main className=" bg-white px-10 dark:bg-gray-900 sm:px-32 md:px-32 lg:px-40">
                 <section className="min-h-screen">
                     <nav className="py-10 mb-12 flex justify-between dark:text-white">
                         <h1 className="font-burtons text-xl">DM-logo</h1>
@@ -112,7 +112,7 @@ export default function Home() {
                         </p>
                         
                     </div>
-                    <div className="lg:flex gap-10" >
+                    <div className="lg:flex gap-10 lg:flex-wrap" >
                         <div data-aos="zoom-in-right" className="ease-in duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:border dark:text-white flex-1 border-b dark:border-white  border-black border-solid" >
                             <div className={styles.imgCenter} >
 
@@ -193,8 +193,9 @@ export default function Home() {
                     
                     <div className="flex flex-col gap-10 py-8 lg:flex-row lg:flex-wrap">
                         
-                        <div data-aos="fade-right" className="basis-1/3 flex-1 ease-in duration-300">
+                        <div  className="basis-1/3 flex-1 ">
                             <Image
+                                data-aos="fade-right"
                                 className="rounded-lg object-cover border border-black"
                                 width={"100%"}
                                 height={"100%"}
@@ -202,8 +203,10 @@ export default function Home() {
                                 src={web1}
                             />
                         </div>
-                        <div data-aos="fade-left" className="ease-in duration-300 basis-1/3 flex-1">
+
+                        <div  className=" basis-1/3 flex-1">
                             <Image
+                                data-aos="zoom-in-right"
                                 className="rounded-lg object-cover border border-black"
                                 width={"100%"}
                                 height={"100%"}
@@ -211,17 +214,21 @@ export default function Home() {
                                 src={web3}
                             />
                         </div>
-                        <div data-aos="fade-right" className="ease-in duration-300 basis-1/3 flex-1">
+
+                        <div  className=" basis-1/3 flex-1">
                             <Image
+                            data-aos="fade-right"
                                 className="rounded-lg object-cover border border-black"
                                 width={"100%"}
                                 height={"100%"}
                                 layout="responsive"
-                                src={web3}
+                                src={web2}
                             />
                         </div>
-                        <div data-aos="fade-left" className=" ease-in-out duration-300 basis-1/3 flex-1">
+
+                        <div  className=" basis-1/3 flex-1">
                             <Image
+                                data-aos="zoom-in-up"
                                 className="rounded-lg object-cover border border-black"
                                 width={"100%"}
                                 height={"100%"}
@@ -229,8 +236,6 @@ export default function Home() {
                                 src={web4}
                             />
                         </div>
-
-                        
                         <div className="basis-1/3 flex-1">
                         <h2 className="pb-4 text-2xl decoration-solid decoration-black underline dark:text-white dark:decoration-white"><b>Portafolio web | Darío Marquínez</b></h2>
                             <Image
